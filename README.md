@@ -7,16 +7,16 @@ This repository explores various **image reconstruction methods**, providing a c
 The repository includes four image reconstruction techniques:
 
 1. **Fourier Transform Reconstruction**
-   - Uses **frequency components** to reconstruct images, demonstrating the contribution of different frequencies to image formation.
+   - Uses **2D Fourier Transform** to decompose an image into frequency components and reconstruct it by progressively adding frequencies.
 
 2. **Wavelet Transform Reconstruction**
-   - Provides **localized frequency analysis** using wavelets, allowing for efficient reconstruction of details and edges.
+   - Applies **discrete wavelet transform** for multi-resolution analysis, enabling efficient reconstruction of both coarse and fine image details.
 
 3. **Compressed Sensing Reconstruction**
-   - Reconstructs images from **incomplete data** using sparsity and optimization techniques, often used in **medical imaging**.
+   - Uses **random sampling** and **L1 minimization** to reconstruct images from incomplete data, leveraging sparsity in the transform domain.
 
 4. **Autoencoder-Based Reconstruction**
-   - Uses a **neural network** to learn compressed representations and reconstruct images, demonstrating the power of deep learning.
+   - Uses a **convolutional autoencoder** to encode an image into a lower-dimensional latent space and reconstruct it, minimizing reconstruction error via backpropagation.
 
 ## Usage
 1. **Install Dependencies**:
